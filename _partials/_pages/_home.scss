@@ -3,6 +3,7 @@ body {
   height: 100vh;
   overflow: hidden;
   background-color: $black;
+  border: 5px solid $yellow;
 
   .circle {
     width: 200px;
@@ -24,6 +25,7 @@ body {
 
   .carousel {
     margin-top: 5vh;
+    height: calc(50vh + 25px);
     .swiper-wrapper .swiper-slide{
       width: 60vw;
       .card-box{
@@ -31,11 +33,11 @@ body {
         width: 60vw;
         margin-top: 20px;
         background-color: $yellow;
-        position: relative;
         img{
+          border: 10px solid $black;
           position: absolute;
-          top: -20px;
-          left: -20px;
+          top: -25px;
+          left: -25px;
           display: block;
           height: 100%;
           width: 100%;
@@ -43,5 +45,17 @@ body {
         }
       }
     }
+  }
+}
+
+/*
+=====================================================
+Medium devices (desktops, 768px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
+@include media-breakpoint-up(md) {
+  body{
+
   }
 }

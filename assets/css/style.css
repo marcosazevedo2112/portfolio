@@ -15,7 +15,7 @@
   --bs-blue: #0d6efd;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
-  --bs-pink: #d63384;
+  --bs-pink: #D44D5C;
   --bs-red: #9B1D20;
   --bs-orange: #fd7e14;
   --bs-yellow: #FCAF58;
@@ -76,7 +76,7 @@
   --bs-border-radius-pill: 50rem;
   --bs-link-color: #0d6efd;
   --bs-link-hover-color: #0a58ca;
-  --bs-code-color: #d63384;
+  --bs-code-color: #D44D5C;
   --bs-highlight-bg: #feefde;
 }
 
@@ -10830,11 +10830,26 @@ header .line .techs img:first-child {
   padding-left: 0px;
 }
 
+/*
+=====================================================
+Medium devices (desktops, 768px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
+@media (min-width: 768px) {
+  header h1, header .h1 {
+    font-size: 3.5rem;
+  }
+  header h1 span, header .h1 span {
+    display: inline;
+  }
+}
 body {
   width: 100vw;
   height: 100vh;
   overflow: hidden;
   background-color: #1C1C1C;
+  border: 5px solid #FCAF58;
 }
 body .circle {
   width: 200px;
@@ -10853,6 +10868,7 @@ body .circle.bottom {
 }
 body .carousel {
   margin-top: 5vh;
+  height: calc(50vh + 25px);
 }
 body .carousel .swiper-wrapper .swiper-slide {
   width: 60vw;
@@ -10862,16 +10878,23 @@ body .carousel .swiper-wrapper .swiper-slide .card-box {
   width: 60vw;
   margin-top: 20px;
   background-color: #FCAF58;
-  position: relative;
 }
 body .carousel .swiper-wrapper .swiper-slide .card-box img {
+  border: 10px solid #1C1C1C;
   position: absolute;
-  top: -20px;
-  left: -20px;
+  top: -25px;
+  left: -25px;
   display: block;
   height: 100%;
   width: 100%;
   object-fit: cover;
 }
+
+/*
+=====================================================
+Medium devices (desktops, 768px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
 
 /*# sourceMappingURL=style.css.map */

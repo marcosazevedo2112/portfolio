@@ -31,3 +31,20 @@ header{
         }
       }
 }
+
+/*
+=====================================================
+Medium devices (desktops, 768px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
+@include media-breakpoint-up(md) {
+  header{
+    h1{
+      font-size: 3.5rem;
+      span{
+        display: inline;
+      }
+    }
+  }
+}
