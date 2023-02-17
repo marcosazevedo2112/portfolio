@@ -1,0 +1,33 @@
+header{
+    padding: 1em;
+      h1,h4{
+        margin: 0;
+      }
+      h1{
+        font-size: 3.25rem;
+        line-height: 0.9;
+        span{
+            display: block;
+        }
+      }
+      h4{
+        margin-left: 2px;
+        font-size: 1rem;
+      }
+      .line{
+        padding-top: 0.5em;
+        p{
+            display: none;
+        }
+        .techs{
+            img{
+                display: inline-block;
+                height: 25px;
+                padding-left: 4px;
+                &:first-child{
+                    padding-left: 0px;
+                }
+            }
+        }
+      }
+}
