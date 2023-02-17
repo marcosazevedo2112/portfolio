@@ -13,8 +13,5 @@
     "w-css": "sass --watch _partials assets/css"
   },
   "author": "",
-  "description": "",
-  "dependencies": {
-    "flickity": "^3.0.0"
-  }
+  "description": ""
 }

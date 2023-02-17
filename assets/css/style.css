@@ -10852,27 +10852,26 @@ body .circle.bottom {
   left: -100px;
 }
 body .carousel {
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
-body .carousel .preview-card {
-  margin-top: 20px;
-  height: 40vh;
+body .carousel .swiper-wrapper .swiper-slide {
   width: 60vw;
-  margin-right: 20vw;
+}
+body .carousel .swiper-wrapper .swiper-slide .card-box {
+  height: 50vh;
+  width: 60vw;
+  margin-top: 20px;
   background-color: #FCAF58;
   position: relative;
 }
-body .carousel .preview-card::after {
-  content: "";
-  display: block;
-  height: 40vh;
-  width: 60vw;
-  background-image: url("../../assets/images/projetos/cinema.png");
-  background-size: cover;
-  background-repeat: no-repeat;
+body .carousel .swiper-wrapper .swiper-slide .card-box img {
   position: absolute;
   top: -20px;
-  left: 20px;
+  left: -20px;
+  display: block;
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
 }
 
 /*# sourceMappingURL=style.css.map */
