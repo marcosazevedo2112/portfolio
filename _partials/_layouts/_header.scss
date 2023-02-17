@@ -48,3 +48,43 @@ Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
     }
   }
 }
+
+/*
+=====================================================
+Large devices (desktops, 992px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
+@include media-breakpoint-up(lg) {
+  header{
+    h1{
+      font-size: 4.5rem;
+    }
+    .line {
+      display: flex;
+      align-items: baseline;
+      p{
+        display: inline;
+        margin-right: 8px;
+        color: $white;
+        font-size: 1.5rem;
+      }
+    }
+    .techs{
+      display: inline-block;
+    }
+  }
+}
+
+/*
+=====================================================
+Extra Extra Large devices (desktops, 1400px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
+@include media-breakpoint-up(xxl) {
+  header{
+    padding: 4em;
+    padding-bottom: 0;
+  }
+}

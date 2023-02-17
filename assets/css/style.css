@@ -10844,6 +10844,42 @@ Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
     display: inline;
   }
 }
+/*
+=====================================================
+Large devices (desktops, 992px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
+@media (min-width: 992px) {
+  header h1, header .h1 {
+    font-size: 4.5rem;
+  }
+  header .line {
+    display: flex;
+    align-items: baseline;
+  }
+  header .line p {
+    display: inline;
+    margin-right: 8px;
+    color: #EBEBEB;
+    font-size: 1.5rem;
+  }
+  header .techs {
+    display: inline-block;
+  }
+}
+/*
+=====================================================
+Extra Extra Large devices (desktops, 1400px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
+@media (min-width: 1400px) {
+  header {
+    padding: 4em;
+    padding-bottom: 0;
+  }
+}
 body {
   width: 100vw;
   height: 100vh;
@@ -10878,6 +10914,8 @@ body .carousel .swiper-wrapper .swiper-slide .card-box {
   width: 60vw;
   margin-top: 20px;
   background-color: #FCAF58;
+  box-shadow: none;
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 body .carousel .swiper-wrapper .swiper-slide .card-box img {
   border: 10px solid #1C1C1C;
@@ -10888,6 +10926,7 @@ body .carousel .swiper-wrapper .swiper-slide .card-box img {
   height: 100%;
   width: 100%;
   object-fit: cover;
+  transition: 500ms cubic-bezier(0.075, 0.82, 0.165, 1);
 }
 
 /*
@@ -10896,5 +10935,72 @@ Medium devices (desktops, 768px and up)
 Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
 =====================================================
 */
+@media (min-width: 768px) {
+  body .carousel {
+    margin-top: 7vh;
+  }
+  body .carousel .swiper-wrapper .swiper-slide {
+    width: auto;
+  }
+  body .carousel .swiper-wrapper .swiper-slide .card-box {
+    width: auto;
+  }
+}
+/*
+=====================================================
+Large devices (desktops, 992px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
+@media (min-width: 992px) {
+  body .carousel {
+    padding-top: 2em;
+    margin-left: 10vw;
+  }
+  body .carousel .swiper-wrapper .swiper-slide:hover .card-box {
+    margin-top: -25px;
+    margin-left: -25px;
+    background-color: #D44D5C;
+  }
+  body .carousel .swiper-wrapper .swiper-slide:hover .card-box img {
+    top: 0;
+    left: 0;
+  }
+  body .circle {
+    width: 300px;
+    height: 300px;
+  }
+  body .circle.top {
+    top: -150px;
+    right: -150px;
+  }
+  body .circle.bottom {
+    bottom: -150px;
+    left: -150px;
+  }
+}
+/*
+=====================================================
+Extra Extra Large devices (desktops, 1400px and up)
+Read more: https://getbootstrap.com/docs/5.0/layout/breakpoints/
+=====================================================
+*/
+@media (min-width: 1400px) {
+  body .carousel {
+    margin-top: 4vh;
+  }
+  body .circle {
+    width: 400px;
+    height: 400px;
+  }
+  body .circle.top {
+    top: -200px;
+    right: -200px;
+  }
+  body .circle.bottom {
+    bottom: -200px;
+    left: -200px;
+  }
+}
 
 /*# sourceMappingURL=style.css.map */
